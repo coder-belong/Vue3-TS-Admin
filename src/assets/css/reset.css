@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	width: 100%;
+	height: 100%;
+}
+
+.main-content-card {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.el-card:hover {
+	cursor: pointer !important;
+	box-shadow: 0 0 10px deepskyblue !important;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="num1">0</div>
+<button class="btn" style="margin-bottom: 1000px">开始动画</button>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script type="module">
+	import { CountUp } from "./countUp.js";
+	const btnEle = document.querySelector(".btn");
+	const demo = new CountUp("num1", 999, {});
+
+	btnEle.addEventListener("click", () => {
+		demo.start();
+	});
+
+
+	$(window).on('scroll', () => {
+		console.log(123);
+	})
+
+	// let p1 = new Promise((resolve, reject) => {
+	// 	resolve('success')
+	// })
+
+	async function foo() {
+		// let res = await p1
+		// console.log(res);
+		console.log('foo');
+	}
+
+	function bar() {
+		foo()
+		console.log('bar');
+	}
+	bar()
+</script>
+</body>
+</html>
